@@ -1,0 +1,48 @@
+<div class="col-md-6 col-md-offset-3">
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title text-center">Post New Case</h4>
+        </div>
+        <div class="panel-body">
+            <div class="col-md-6">
+                <div>
+                    <img style="width:100%;height:200px;margin-bottom:15px; border-radius:3px" class="img-responsive" src="http://placehold.it/200x200?text=Drag+Drop+Image+Here">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success form-control"><i class="fa fa-plus-circle"></i> Submit Case</button>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <form name="newCaseForm" novalidate>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" ng-model="case.name" required
+                               placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="dateOfBirth" ng-model="case.dateOfBirth"
+                               placeholder="Date of birth" onfocus="this.type='date'" onblur="this.type='text'">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="lastLocation" ng-model="case.lastLocation"
+                               placeholder="Last known location">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" ng-model="case.lastDate"
+                               placeholder="Date last seen" onfocus="this.type='date'" onblur="this.type='text'">
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" name="name" ng-model="case.name"
+                                placeholder="Description"></textarea>
+                            
+                    </div>
+                
+                </form>
+            </div>
+        
+        </div>
+    
+    </div>
+
+</div>

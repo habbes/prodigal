@@ -1,0 +1,45 @@
+<div class="col-md-offset-4 col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><div class="text-center">Register</div></h4>
+        </div>
+        
+        <div class="panel-body">
+            <form name="registerForm" novalidate>    
+                <div class="form-group col-md-6 input-row-left">
+                    <input type="text" name="firstName" class="form-control" ng-model="user.firstName" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6 input-row-right">
+                    <input type="text" name="lastName" class="form-control" ng-model="user.lastName" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" ng-model="user.email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            +254
+                        </span>
+                        <input type="text" name="mobileNumber" class="form-control" ng-model="user.mobileNumber" placeholder="Mobile Number">
+                    </div>                   
+                </div>
+                <div class="form-group">
+                    <input type="text" name="idNumber" class="form-control" ng-model="user.idNumber" placeholder="ID Number">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" ng-model="user.password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success form-control"><i class="fa fa-edit"></i> Register</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="panel-footer">
+            <p class="text-center">Already have an account? <a ui-sref="main.login">Login here</a></p>        
+        </div>
+    
+    </div>    
+
+
+</div>

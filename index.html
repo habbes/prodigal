@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Prodigal</title>
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+        <header>
+            <div class="navbar header">
+                <div class="container">
+                    <div class="navbar-header">
+                      <a class="navbar-brand logo" ui-sref="home">Prodigal</a>
+                    </div>
+                    <div class="navbar-form navbar-right top-search-container">
+                        <form name="searchForm" novalidate>
+                            <div class="has-feedback">
+                                <input type="text" name="search" ng-model="searchTerm" class="form-control">
+                                <i class="glyphicon glyphicon-search form-control-feedback"></i>
+                            </div>
+                        </form>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </header>
+        
+        <div ui-view></div>
+        
+        <footer>
+            <div class="container-fluid">
+                <div class="text-center navbar-fixed-bottom footer">
+                    &copy; 2015 Prodigal Inc. A zeroQu Company
+                </div>
+            </div>
+            
+        </footer>
+        
+        
+
+        <script src="vendor/underscore/underscore.js"></script>
+        <script src="vendor/underscore.string/dist/underscore.string.js"></script>
+		<script src="vendor/angular/angular.js"></script>
+        <script src="vendor/angular-underscore-string/angular-underscore-string.js"></script>
+        <script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="app.js"></script>
+        <script src="main/cases.js"></script>
+        
+	</body>
+
+</html>
