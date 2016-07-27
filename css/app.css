@@ -21,6 +21,10 @@ body {
 
 }
 
+.logo:hover, .logo:active, .logo:focus {
+    color:ghostwhite;
+}
+
 
 .header {
     background-color:#083658;
@@ -28,6 +32,11 @@ body {
     padding-bottom:20px;
     margin-bottom:0px;
     border-radius:0px;
+}
+
+.footer-container {
+    padding:0px;
+    margin-top:0px;
 }
 
 .footer {
@@ -43,6 +52,7 @@ nav .btn {
 .main-content {
     padding-top:30px;
     padding-bottom:30px;
+    position:relative;
 }
 
 .input-row-left {
@@ -57,4 +67,73 @@ nav .btn {
 
 .case-image {
     border-radius:3px;
+}
+
+.page-content {
+    position:relative;
+}
+
+.home-container {
+    margin:0px;
+    padding:0px;
+}
+
+.home-section {
+   
+}
+
+.main-content.main-content-home {
+    padding:0px;
+}
+
+.home-section a {
+    display:block;
+    text-align:center;
+    font-size:30px;
+    background-color: #06253C;
+    border:1px solid #052033;
+    font-family:alegreya;
+    color:#B5D0E4;
+    text-decoration:none;
+    text-shadow:1px 1px 5px #013041;
+}
+
+.home-section a:hover {
+    color:white;
+    background-color: rgba(6, 58, 60, 0.64);
+}
+
+.home-view-cases-section, .home-view-cases-section {
+    width:50%;
+    float:left;
+}
+
+.home-about-container a, .home-testimonials-container a {
+    height:200px;
+    padding-top:75px;
+}
+
+.home-cases-container a {
+    padding-top:25px;
+    height:90px;
+}
+
+.home-container {
+    background-color: #E5EFF7;
+}
+
+.header-nav-links {
+    padding-top: 14px;
+}
+
+.header-nav-links a {
+    color: #B5C8DA;
+}
+
+.header-nav-links a:focus, .header-nav-links a:hover {
+    color:white;
+}
+
+.search-icon {
+    cursor: pointer;
 }

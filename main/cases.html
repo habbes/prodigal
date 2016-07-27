@@ -1,6 +1,6 @@
-<div class="col-md-8 col-md-offset-2">
+<div class="col-md-8 col-md-offset-2 page-content">
     
-    <div class="panel panel-default" ng-repeat="c in cases">
+    <div class="panel panel-default" ng-repeat="c in cases | filter: searchTerm">
         <div class="panel-body case-container">
             <div class="col-md-4">
                 <img ng-src="{{c.image}}" style="height:180px;width:180px" class="case-image">
